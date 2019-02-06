@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SExhibit 3.0 </title>
+    <title>Holochain Ecosystem</title>
+    
     
 	<link      href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR84KztT4BH2HWOUy84KTVMc3eVDTLxmbGbIWgr8ef95qqVjdQBYDiu3s_5Zwt287IQ4QEBtk6OHWJ_/pub?gid=1088595500&single=true&output=csv" type="text/csv" rel="exhibit-data" data-ex-value-separator=";" />
 	
-    <script src="http://api.simile-widgets.org/exhibit/3.1.0rc/exhibit-api.js"></script>
+    <script src="//api.simile-widgets.org/exhibit/3.1.0rc/exhibit-api.js" type="text/javascript"></script>
     
   </head>
   <body>
@@ -18,8 +20,12 @@
                         <b>Search</b>
                         <div ex:role="facet" ex:facetClass="TextSearch"></div>
                         <hr/>
-                        <div ex:role="facet" ex:expression=".Project" ex:facetLabel="Project" ex:height="15em"></div>
-                        <div ex:role="facet" ex:expression=".Source" ex:facetLabel="Source" ex:height="20em"></div>
+                        <div ex:role="facet" ex:expression=".Provider" ex:facetLabel="Provider" ex:height="15em"></div>
+                        <div ex:role="facet" ex:expression=".Source" ex:facetLabel="Source" ex:height="15em"></div>
+						<div ex:role="facet" ex:expression=".Subject" ex:facetLabel="Subject" ex:height="15em"></div>
+						<div ex:role="facet" ex:expression=".Content" ex:facetLabel="Content" ex:height="15em"></div>
+						<div ex:role="facet" ex:expression=".Service" ex:facetLabel="Service" ex:height="15em"></div>
+						<div ex:role="facet" ex:expression=".Language" ex:facetLabel="Language" ex:height="15em"></div>
                     </td>
                     <td>
   
@@ -29,8 +35,7 @@
                                     <tr>
                                         <td style="position: relative"></td>
                                         <td>
-                                            <h1><span ex:content=".Label" /></h1>
-                                            <h2><span ex:content=".Source"></span> <span ex:content=".Language"></span></h2>
+                                            <a data-ex-href-content=".URL" shape="rect" target="_blank"><strong><span data-ex-content=".label"></span></strong></a>
                                             <p ex:content=".text"></p>
                                             
                                         </td>
@@ -40,11 +45,11 @@
                            
                         </div>
                     </td>
-                    <td width="15%">
+                    <!--<td width="15%">
                         <div ex:role="facet" ex:expression=".Language" ex:facetLabel="Language" ex:height="15em"></div>
                         <div ex:role="facet" ex:expression=".Content" ex:facetLabel="Content" ex:height="20em"></div>
                         <center ex:role="logo"></center>
-                    </td>
+                    </td>-->
                 </tr>
             </table>
         </div>
