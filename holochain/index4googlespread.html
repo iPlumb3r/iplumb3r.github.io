@@ -1,13 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<!DOCTYPE html>
 <html>
   <head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Holochain Ecosystem</title>
     
     
-	<link      href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR84KztT4BH2HWOUy84KTVMc3eVDTLxmbGbIWgr8ef95qqVjdQBYDiu3s_5Zwt287IQ4QEBtk6OHWJ_/pub?gid=1088595500&single=true&output=csv" type="text/csv" rel="exhibit-data" data-ex-value-separator=";" />
+	<link href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR84KztT4BH2HWOUy84KTVMc3eVDTLxmbGbIWgr8ef95qqVjdQBYDiu3s_5Zwt287IQ4QEBtk6OHWJ_/pub?gid=1088595500&single=true&output=csv" type="text/csv" rel="exhibit-data" data-ex-value-separator=";" />
 	
-    <script src="//api.simile-widgets.org/exhibit/3.1.0rc/exhibit-api.js" type="text/javascript"></script>
+    <script src="http://api.simile-widgets.org/exhibit/3.1.0rc/exhibit-api.js" type="text/javascript"></script>
     
   </head>
   <body>
@@ -17,26 +18,22 @@
             <table cellpadding="0" cellspacing="10" border="0" id="exhibit" width="100%">
                 <tr>
                     <td width="15%">
-                        <b>Search</b>
-                        <div ex:role="facet" ex:facetClass="TextSearch"></div>
+                        <div data-ex-role="exhibit-facet" data-ex-facet-class="TextSearch" data-ex-facet-label="Search"></div>
                         <hr/>
-                        <div ex:role="facet" ex:expression=".Provider" ex:facetLabel="Provider" ex:height="15em"></div>
-                        <div ex:role="facet" ex:expression=".Source" ex:facetLabel="Source" ex:height="15em"></div>
-						<div ex:role="facet" ex:expression=".Subject" ex:facetLabel="Subject" ex:height="15em"></div>
-						<div ex:role="facet" ex:expression=".Content" ex:facetLabel="Content" ex:height="15em"></div>
-						<div ex:role="facet" ex:expression=".Service" ex:facetLabel="Service" ex:height="15em"></div>
-						<div ex:role="facet" ex:expression=".Language" ex:facetLabel="Language" ex:height="15em"></div>
+                        <div data-ex-role="exhibit-facet" data-ex-expression=".Provider" data-ex-facet-label="Provider" data-ex-height="10em"></div>
+                        <div data-ex-role="exhibit-facet" data-ex-expression=".Source" data-ex-facet-label="Source" data-ex-height="5em"></div>
+						<div data-ex-role="exhibit-facet" data-ex-expression=".Subject" data-ex-facet-label="Subject" data-ex-height="10em"></div>
+						<div data-ex-role="exhibit-facet" data-ex-expression=".Content" data-ex-facet-label="Content" data-ex-height="10em"></div>
+						<div data-ex-role="exhibit-facet" data-ex-expression=".Service" data-ex-facet-label="Service" data-ex-height="10em"></div>
+						<div data-ex-role="exhibit-facet" data-ex-expression=".Language" data-ex-facet-label="Language" data-ex-height="10em"></div>
                     </td>
-                    <td>
-  
-                        <div ex:role="viewPanel">
-                            <div ex:role="lens" class="item" style="display: none;">
+                    <td valign="top">
+                        <div data-ex-role="exhibit-view" data-ex-show-all="true" >
+                            <div data-ex-role="exhibit-lens" class="item">
                                 <table cellspacing="5">
-                                    <tr>
-                                        <td style="position: relative"></td>
-                                        <td>
-                                            <a data-ex-href-content=".URL" shape="rect" target="_blank"><strong><span data-ex-content=".label"></span></strong></a>
-                                            <p ex:content=".text"></p>
+                                    <tr  >
+                                        <td  >
+                                            <a data-ex-href-content=".URL" target="_blank"><strong><span data-ex-content=".Label"></span></strong></a>
                                             
                                         </td>
                                     </tr>
@@ -45,11 +42,6 @@
                            
                         </div>
                     </td>
-                    <!--<td width="15%">
-                        <div ex:role="facet" ex:expression=".Language" ex:facetLabel="Language" ex:height="15em"></div>
-                        <div ex:role="facet" ex:expression=".Content" ex:facetLabel="Content" ex:height="20em"></div>
-                        <center ex:role="logo"></center>
-                    </td>-->
                 </tr>
             </table>
         </div>
